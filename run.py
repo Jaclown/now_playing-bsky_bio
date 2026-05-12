@@ -79,7 +79,7 @@ client.login(HANDLE, PASSWORD)
 last_bio = None
 
 # Poner lo que precede al Now Playing
-prefix_bio = "Antes tenía una bio muy cortita así que me pongo esta que es más larga\n\n"
+prefix_bio = "Lo que quieras. Puedes usar lo siguiente para añadir saltos de línea: \n"
 
 # Iterar para cambiar según lo que estemos escuchando y que el Now Playing vaya acorde a cada cosa que lea mpris (por defecto cada 10 secs)
 while True:
