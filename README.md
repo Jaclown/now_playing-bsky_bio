@@ -14,7 +14,7 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-python run.py
+configurar .env (ver tercer punto: configuración de bluesky)
 
 # CONFIGURACIÓN DEL REPRODUCTOR
 
