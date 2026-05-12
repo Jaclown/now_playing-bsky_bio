@@ -13,30 +13,37 @@ for n in names:
 
 print ("Reproductores encontrados:", players)
 
-# Filtrar para coger solo Cider/APM
+# Filtrar para coger solo Cider/APM o MPV
 cider = None
+mpv = None
 
 for player in players:
     if "chromium" in player:
         cider = player
-        break
+    if "mpv" in player:
+        mpv = player
 
-if cider is None:
-    print("Cider no está reproduciendo")
+source = mpv or cider
+
+if source is None:
+    print("Nada reproduciendo")
 else:
-    print("Cider reproduciendo:", cider)
-    # Sacar los datos que muestra Cider, manejando los metadatos que expone mpris. La ruta es siempre la misma, donde expone todo lo que detecta
-    obj = bus.get_object(cider, "/org/mpris/MediaPlayer2")
+    print("Reproduciendo:", source)
+    # Sacar los datos que muestra source, manejando los metadatos que expone mpris. La ruta es siempre la misma, donde expone todo lo que detecta
+    obj = bus.get_object(source, "/org/mpris/MediaPlayer2")
     props = dbus.Interface(obj, "org.freedesktop.DBus.Properties")
     # Pillar los datos que nos interesan, el estado de reproducción (pause, playing...) y el artista, o artistas si son varios, iterando la lista con un bucle
     status = props.Get("org.mpris.MediaPlayer2.Player", "PlaybackStatus")
     metadata = props.Get("org.mpris.MediaPlayer2.Player", "Metadata")
-    song = metadata.get("xesam:title", [])
+    track = metadata.get("xesam:title", [])
     artist_list = metadata.get("xesam:artist", [])
     artist = ", ".join(str(a) for a in artist_list)
     # Mostrar los datos
-    print("Estado:", status)
-    print("Canción:", song)
-    print("Artista:", artist)
+    if source is cider:
+        print("Estado:", status)
+        print("Canción:", track)
+        print("Artista:", artist)
+    if source is mpv:
+        print("Pista:", track)
 
 
