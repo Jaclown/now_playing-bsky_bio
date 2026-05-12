@@ -1,6 +1,6 @@
 # Bluesky Now Playing Bot (Linux + MPRIS)
 
-Bot sencillo para actualizar automáticamente la bio de Bluesky con la música que esté sonando en tiempo real usando MPRIS en Linux. Funciona con reproductores como Cider, Spotify, VLC, Chromium, Firefox, etc.
+Bot sencillo para actualizar automáticamente la bio de Bluesky con la música que esté sonando en tiempo real usando MPRIS en Linux. Funciona con reproductores como Cider, Spotify, MPV, VLC, Chromium, Firefox, etc.
 
 # IMPORTANTE
 
