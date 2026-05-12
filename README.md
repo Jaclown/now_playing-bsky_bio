@@ -20,7 +20,7 @@ python run.py
 
 # CONFIGURACIÓN DEL REPRODUCTOR
 
-La función get_now_playing() es la que decide qué reproductor se escucha. Por defecto está pensado para Cider (Apple Music). Para ver qué reproductores tienes disponibles en tu sistema ejecuta:
+La función get_now_playing() es la que decide qué reproductor se escucha. Por defecto está pensado para Cider (Apple Music) y MPV. Para ver qué reproductores tienes disponibles en tu sistema ejecuta:
 
 python mpris.py
 
