@@ -32,7 +32,7 @@ Crea un archivo .env en la carpeta raíz (esta misma) y añade tus credenciales:
 
 BLUESKY_HANDLE=usuario.bsky.social
 
-BLUESKY_PASSWORD=tu_password
+BLUESKY_PASSWORD=tu_password (IMPORTANTE: crea una contraseña de aplicación, no uses la tuya real)
 
 BLUESKY_URL=https://bsky.social (o https://eurosky.social si es lo que usas)
 
