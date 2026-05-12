@@ -30,7 +30,7 @@ Te devolverá algo tipo org.mpris.MediaPlayer2.spotify o org.mpris.MediaPlayer2.
 
 Crea un archivo .env en la carpeta raíz (esta misma) y añade tus credenciales:
 
-BLUESKY_HANDLE=usuario.bsky.social
+BLUESKY_HANDLE=usuario.bsky.social \n
 BLUESKY_PASSWORD=tu_password
 BLUESKY_URL=https://bsky.social (o https://eurosky.social si es lo que usas)
 
