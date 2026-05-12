@@ -4,7 +4,7 @@ Bot sencillo para actualizar automáticamente la bio de Bluesky con la música q
 
 # IMPORTANTE
 
-Se recomienda usar un entorno virtual (`venv`) para evitar conflictos con paquetes del sistema. Este proyecto necesita `python-dbus`, que en Manjaro/Arch se instala con pacman porque depende de librerías del sistema.
+Se recomienda usar un entorno virtual (`venv`) para evitar conflictos con paquetes del sistema. Este proyecto necesita `python-dbus`, que en Manjaro/Arch (donde se ha creado) se instala con pacman porque depende de librerías del sistema.
 
 sudo pacman -S python-dbus
 
